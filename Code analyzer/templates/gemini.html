@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quality Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gemini.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Quality Analysis Result</h1>
+        <h2>Input Code:</h2>
+        <pre>{{ code }}</pre>
+        <h2>Analysis Result:</h2>
+        <p>{{ response }}</p>
+        <a href="{{ url_for('index') }}">Go Back</a>
+    </div>
+</body>
+</html>
